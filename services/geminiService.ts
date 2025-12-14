@@ -2,6 +2,9 @@ import { GoogleGenAI } from "@google/genai";
 import { Step, Scenario } from "../types";
 import { STEPS_INFO } from "../constants";
 
+// Declare process to satisfy TypeScript without @types/node
+declare const process: any;
+
 let ai: GoogleGenAI | null = null;
 
 try {
